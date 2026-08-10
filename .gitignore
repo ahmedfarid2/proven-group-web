@@ -1,0 +1,8 @@
+# Dev scaffold, not used by any page
+image-slot.js
+.image-slots.state.json
+
+# Unreferenced duplicate image set
+assets/imgc/
+
+.DS_Store

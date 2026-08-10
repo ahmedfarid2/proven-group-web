@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Equipo, Proven Results Group</title>
+<link rel="icon" href="assets/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F7F5F0;color:#141A21;font-family:'IBM Plex Sans',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;transition:color .3s ease}a:hover{color:#C9A96E}
+::selection{background:#C9A96E;color:#10161D}
+h1,h2,h3,h4{text-wrap:balance}
+p{text-wrap:pretty}
+.t-en{display:none!important}
+.lang-en .t-es{display:none!important}
+.lang-en .t-en{display:inline!important}
+.lt-es{background:#C9A96E;color:#10161D}
+.lang-en .lt-es{background:transparent;color:#F4F2EC}
+.lang-en .lt-en{background:#C9A96E;color:#10161D}
+@keyframes kb{from{transform:scale(1.08)}to{transform:scale(1)}}
+.kb{animation:kb 13s cubic-bezier(.2,.6,.3,1) forwards}
+.seccard{background:#fff;border:1px solid rgba(20,26,33,.1);border-radius:20px;transition:border-color .35s ease,box-shadow .35s ease,transform .35s ease}
+.seccard:hover{border-color:rgba(201,169,110,.55);box-shadow:0 8px 32px rgba(16,22,29,.08);transform:translateY(-3px)}
+.btn{font:600 11.5px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;padding:16px 32px;border-radius:99px;display:inline-flex;align-items:center;gap:10px;transition:background .3s ease,color .3s ease,border-color .3s ease}
+details.bio > summary{list-style:none;cursor:pointer;font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;color:#8B6914;display:inline-flex;align-items:center;gap:8px}
+details.bio > summary::-webkit-details-marker{display:none}
+details.bio .more{display:none}details.bio[open] .more{display:inline}
+details.bio .less{display:inline}details.bio[open] .less{display:none}
+@media (prefers-reduced-motion:reduce){.kb{animation:none}}
+
+.nav-burger{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.nav-burger span{display:block;width:22px;height:2px;background:#F4F2EC;border-radius:2px}
+@media (max-width:900px){
+.nav-burger{display:flex}
+.navlinks{display:none!important;position:absolute;top:100%;left:0;right:0;background:#101C2B;flex-direction:column!important;align-items:flex-start!important;gap:2px!important;padding:10px 24px 22px;border-bottom:1px solid rgba(201,169,110,.25);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.navlinks.open{display:flex!important}
+.navlinks a{padding:11px 0;font-size:14.5px;width:100%}
+.navlinks a[href="contacto.html"],.navlinks a[href="#contacto"]{width:auto;margin-top:8px}
+}
+@media (min-width:900px){.teamgrid>.seccard{box-sizing:border-box;min-height:494px;display:flex;flex-direction:column}
+.teamgrid>.seccard>details.bio{margin-top:auto}}
+</style>
+
+</head>
+<body>
+
+
+<div id="site-root" class="">
+
+<!-- NAV -->
+<div style="position:sticky;top:0;z-index:50;background:rgba(16,28,43,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,169,110,.14)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:15px clamp(20px,4vw,40px)">
+    <a href="index.html" style="display:flex;align-items:center;gap:11px;flex:none">
+      <svg viewBox="188 240 545 560" style="height:24px;display:block" fill="#C9A96E"><polygon points="384.6,506.5 547.32,473.02 547.32,356.77 384.6,390.25"></polygon><polygon points="188.09,646.58 384.6,622.75 384.6,506.5 188.09,530.34"></polygon><polygon points="188.09,530.34 729.08,680.12 729.08,796.36 188.09,646.58"></polygon><polygon points="384.6,390.25 729.08,485.63 729.08,601.87 384.6,506.5"></polygon><polygon points="547.32,240.82 729.08,291.14 729.08,407.38 547.32,357.06"></polygon></svg>
+      <span style="font:600 12px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#F4F2EC">PROVEN RESULTS GROUP</span>
+    </a>
+    <button class="nav-burger" onclick="toggleMenu(this)" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <div class="navlinks" style="display:flex;align-items:center;gap:clamp(14px,2.2vw,30px);font:500 12.5px 'IBM Plex Sans',sans-serif;letter-spacing:.05em;color:rgba(244,242,236,.78);flex-wrap:wrap;justify-content:flex-end">
+      <a href="nosotros.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Quiénes somos</span><span class="t-en">About</span></a>
+      <a href="vision-y-objetivos.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Visión y objetivos</span><span class="t-en">Vision &amp; Goals</span></a>
+      <a href="portfolio.html" style="color:rgba(244,242,236,.78)">Portfolio</a>
+      <a href="inversiones.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Inversiones externas</span><span class="t-en">External investments</span></a>
+      <a href="equipo.html" style="color:#C9A96E"><span class="t-es">Equipo</span><span class="t-en">Team</span></a>
+      <span style="display:inline-flex;border:1px solid rgba(244,242,236,.25);border-radius:99px;overflow:hidden;font:600 10.5px 'IBM Plex Sans',sans-serif">
+        <span class="lt-es" onclick="setLang('es')" style="padding:6px 11px;cursor:pointer">ES</span>
+        <span class="lt-en" onclick="setLang('en')" style="padding:6px 11px;cursor:pointer;color:#F4F2EC">EN</span>
+      </span>
+      <a href="contacto.html" style="font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;padding:11px 24px;background:#C9A96E;color:#10161D;border-radius:99px"><span class="t-es" style="color:#10161D">CONTACTO</span><span class="t-en" style="color:#10161D">CONTACT</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO -->
+<div style="position:relative;min-height:calc(100vh - 55px);display:flex;align-items:center;background:#101C2B;overflow:hidden">
+  <div style="position:absolute;inset:0;overflow:hidden"><img src="assets/img/handshake.jpg" alt="Equipo de PRG" class="kb" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,22,35,.95) 0%,rgba(13,22,35,.55) 55%,rgba(13,22,35,.35) 100%)"></div>
+  <div style="position:relative;max-width:1280px;margin:0 auto;width:100%;padding:clamp(80px,10vw,120px) clamp(20px,4vw,40px)">
+    <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#C9A96E;margin-bottom:20px"><span class="t-es">EQUIPO</span><span class="t-en">TEAM</span></div>
+    <h1 style="font:300 clamp(44px,6.5vw,84px)/1 'Cormorant Garamond',serif;color:#F4F2EC;margin:0 0 18px;max-width:780px"><span class="t-es">Las personas detrás<br><span style="color:#DCC08A">del grupo</span></span><span class="t-en">The people behind<br><span style="color:#DCC08A">the group</span></span></h1>
+    <p style="font:400 14px/1.9 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.7);max-width:1080px;margin:0"><span class="t-es">Operadores primero: el equipo que define la estrategia es el mismo que la ejecuta dentro de los negocios.</span><span class="t-en">Operators first, the team that sets the strategy is the same team inside the businesses making it happen.</span></p>
+  </div>
+</div>
+
+<!-- DIRECCIÓN -->
+<div style="max-width:1280px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,40px)">
+  <div style="margin-bottom:clamp(32px,4vw,44px)">
+    <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#8B6914;margin-bottom:18px"><span class="t-es">DIRECCIÓN</span><span class="t-en">LEADERSHIP</span></div>
+    <h2 style="font:300 clamp(36px,4.4vw,52px)/1.1 'Cormorant Garamond',serif;margin:0"><span class="t-es">Equipo directivo</span><span class="t-en">Executive team</span></h2>
+  </div>
+  <div class="teamgrid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(440px,100%),1fr));gap:16px;align-items:start">
+    <div class="seccard" style="padding:clamp(28px,3.5vw,40px)">
+      <div style="display:flex;gap:24px;align-items:center;margin-bottom:22px;flex-wrap:wrap">
+        <div style="width:120px;height:140px;border-radius:14px;overflow:hidden;flex:none;background:#EFEDE6"><img src="assets/img/ghassan.jpg" alt="Ghassan El Khazen" style="width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block"></div>
+        <div>
+          <h3 style="font:400 30px 'Cormorant Garamond',serif;margin:0 0 4px">Ghassan El Khazen</h3>
+          <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8B6914">CHIEF EXECUTIVE OFFICER</div>
+        </div>
+      </div>
+      <div style="display:grid;gap:8px;margin-bottom:18px;font:400 13px/1.6 'IBM Plex Sans',sans-serif;color:#48505A">
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Emprendedor libanés con más de 15 años de trayectoria entre Oriente Medio y Europa</span><span class="t-en">Lebanese entrepreneur with 15+ years across the Middle East &amp; Europe</span></span></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Convirtió PRG en una plataforma diversificada presente en 4 mercados internacionales</span><span class="t-en">Built PRG into a diversified platform across 4 international markets</span></span></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Disciplina de ingeniería combinada con visión emprendedora</span><span class="t-en">Engineering discipline combined with entrepreneurial vision</span></span></div>
+      </div>
+      <p style="font:400 13.5px/1.85 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0 0 14px"><span class="t-es">Ejecutivo tecnológico y emprendedor con una trayectoria construyendo negocios en Oriente Medio y Europa, que ha dado forma a PRG hasta convertirlo en el grupo internacional que es hoy.</span><span class="t-en">A technology executive and entrepreneur with a track record of building businesses across the Middle East and Europe, shaping PRG into the international group it is today.</span></p>
+      <details class="bio">
+        <summary><span class="less"><span class="t-es">LEER MÁS</span><span class="t-en">READ MORE</span> ↓</span><span class="more"><span class="t-es">LEER MENOS</span><span class="t-en">READ LESS</span> ↑</span></summary>
+        <div style="margin-top:14px;display:grid;gap:10px;font:400 13.5px/1.85 'IBM Plex Sans',sans-serif;color:#5A626C">
+          <p style="margin:0"><span class="t-es">Un capítulo decisivo de su carrera se forjó en Arabia Saudí, donde trabajó en grandes iniciativas de tecnología e infraestructura durante un periodo de rápida transformación institucional y empresarial.</span><span class="t-en">A defining chapter of his career was shaped in Saudi Arabia, where he worked on large-scale technology and infrastructure initiatives during a period of rapid institutional and enterprise transformation.</span></p>
+          <p style="margin:0"><span class="t-es">Tras trasladarse a Europa en 2018, comenzó a construir Proven Results Group como plataforma internacional diversificada. Hoy, como CEO, lidera un portfolio creciente que abarca tecnología, inmobiliario, salud, hostelería e inversiones estratégicas en España, Grecia, Rumanía, EAU y Arabia Saudí.</span><span class="t-en">After moving to Europe in 2018, Ghassan began building Proven Results Group into a diversified international platform. Today, as CEO, he leads a growing portfolio spanning technology, real estate, healthcare, hospitality and strategic investments across Spain, Greece, Romania, the UAE and Saudi Arabia.</span></p>
+          <p style="margin:0"><span class="t-es">Conocido por combinar disciplina de ingeniería con visión emprendedora, se centra en construir negocios resilientes y crear valor a largo plazo. Orgulloso de sus raíces libanesas y del legado de la familia El-Khazen, aporta un fuerte sentido de herencia, responsabilidad y confianza a cada proyecto que lidera.</span><span class="t-en">Known for combining engineering discipline with entrepreneurial vision, he focuses on building resilient businesses and creating long-term value. Proud of his Lebanese roots and the heritage of the El-Khazen family, he brings a strong sense of legacy, stewardship and trust to every venture he leads.</span></p>
+        </div>
+      </details>
+    </div>
+    <div class="seccard" style="padding:clamp(28px,3.5vw,40px)">
+      <div style="display:flex;gap:24px;align-items:center;margin-bottom:22px;flex-wrap:wrap">
+        <div style="width:120px;height:140px;border-radius:14px;overflow:hidden;flex:none;background:#EFEDE6"><img src="assets/img/alexandros.jpg" alt="Alexandros Kastrounis" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block"></div>
+        <div>
+          <h3 style="font:400 30px 'Cormorant Garamond',serif;margin:0 0 4px">Alexandros Kastrounis</h3>
+          <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8B6914">CHIEF OPERATION MANAGER</div>
+        </div>
+      </div>
+      <div style="display:grid;gap:8px;margin-bottom:18px;font:400 13px/1.6 'IBM Plex Sans',sans-serif;color:#48505A">
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Líder de operaciones en Europa y Oriente Medio</span><span class="t-en">Operations leader across Europe &amp; the Middle East</span></span></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Ex ingeniero de logística en Volvo, división de Oriente Medio y Asia</span><span class="t-en">Former Logistics Engineer at Volvo, Middle East &amp; Asia division</span></span></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Disciplina deportiva de élite y militar aplicada a los negocios</span><span class="t-en">Elite athletic and military discipline applied to business</span></span></div>
+      </div>
+      <p style="font:400 13.5px/1.85 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0 0 14px"><span class="t-es">Alexandros supervisa las operaciones diarias de PRG en todos los mercados, convirtiendo la estrategia en ejecución y construyendo los sistemas que permiten al grupo escalar.</span><span class="t-en">Alexandros oversees PRG's day-to-day operations across all markets, turning strategy into execution and building the systems that let the group scale.</span></p>
+      <details class="bio">
+        <summary><span class="less"><span class="t-es">LEER MÁS</span><span class="t-en">READ MORE</span> ↓</span><span class="more"><span class="t-es">LEER MENOS</span><span class="t-en">READ LESS</span> ↑</span></summary>
+        <div style="margin-top:14px;display:grid;gap:10px;font:400 13.5px/1.85 'IBM Plex Sans',sans-serif;color:#5A626C">
+          <p style="margin:0"><span class="t-es">Alexandros lidera las operaciones en los mercados de PRG, alineando equipos, procesos y recursos con el crecimiento del grupo. Su foco es la precisión operativa: poner en marcha las estructuras adecuadas para que el negocio se expanda sin perder el control de la calidad ni de la ejecución.</span><span class="t-en">Alexandros leads operations across PRG's markets, aligning teams, processes and resources behind the group's growth. His focus is operational precision, putting the right structures in place for the business to expand without losing control of quality or execution.</span></p>
+          <p style="margin:0"><span class="t-es">Construyó su base operativa en Volvo, en logística y operaciones dentro de la división de transporte para Oriente Medio y Asia, coordinando cadenas de suministro transfronterizas complejas en algunos de los mercados más exigentes del mundo. Más tarde fundó y dirigió su propia compañía de seguridad para clientes de alto patrimonio, lo que le dio experiencia directa en construir un negocio desde cero: relación con clientes, liderazgo de equipos y plena responsabilidad sobre los resultados.</span><span class="t-en">He built his operational foundation at Volvo, in logistics and operations within the transport division for the Middle East and Asia, coordinating complex cross-border supply chains across some of the world's most demanding markets. He later founded and ran his own security company serving high-net-worth clients, giving him direct experience of building a business from the ground up: client relationships, team leadership and full accountability for results.</span></p>
+          <p style="margin:0"><span class="t-es">Hoy trabaja junto a Ghassan El Khazen, con un papel central en la consolidación y expansión de los negocios del grupo en Grecia, España, Rumanía, EAU y Arabia Saudí. Ese temperamento se forjó pronto: una carrera competitiva en jiu-jitsu -campeón de los Balcanes y doble bronce mundial- instaló su mentalidad de alto rendimiento, y su servicio como alférez en las Fuerzas Especiales griegas afinó su capacidad de liderar equipos y decidir bajo presión.</span><span class="t-en">He now works alongside Ghassan El Khazen, playing a central role in consolidating and expanding the group's ventures across Greece, Spain, Romania, the UAE &amp; Saudi Arabia. That temperament was shaped early: a competitive jiu-jitsu career, Balkan Champion and 2× World Championship bronze medalist, instilled his performance mindset, and his service as a Second Lieutenant in the Greek Special Forces sharpened his ability to lead teams and make decisions under pressure.</span></p>
+        </div>
+      </details>
+    </div>
+    <div class="seccard" style="padding:clamp(28px,3.5vw,40px)">
+      <div style="display:flex;gap:24px;align-items:center;margin-bottom:22px;flex-wrap:wrap">
+        <div style="width:120px;height:140px;border-radius:14px;overflow:hidden;flex:none;background:#EFEDE6"><img src="assets/img/alex-jimenez.jpg" alt="Alex Jiménez" style="width:100%;height:100%;object-fit:cover;object-position:center 22%;display:block"></div>
+        <div>
+          <h3 style="font:400 30px 'Cormorant Garamond',serif;margin:0 0 4px">Alex Jiménez</h3>
+          <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8B6914">GENERAL MANAGER</div>
+        </div>
+      </div>
+      <div style="display:grid;gap:8px;margin-bottom:18px;font:400 13px/1.6 'IBM Plex Sans',sans-serif;color:#48505A">
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Más de 6 años de experiencia en gestión de proyectos, marketing y estrategia</span><span class="t-en">Over 6 years of experience in project management, marketing and strategy</span></span></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Perfil multidisciplinar con recorrido en sectores diversos</span><span class="t-en">Multidisciplinary profile with a track record across diverse sectors</span></span></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Operativa en mercados internacionales</span><span class="t-en">Operational experience in international markets</span></span></div>
+      </div>
+      <p style="font:400 13.5px/1.85 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0 0 14px"><span class="t-es">Gestiona las operaciones del día a día del grupo, coordinando la ejecución de las distintas líneas de negocio y asegurando la coherencia operativa entre mercados y sectores.</span><span class="t-en">He manages the group's day-to-day operations, coordinating execution across business lines and ensuring operational consistency between markets and sectors.</span></p>
+      <details class="bio">
+        <summary><span class="less"><span class="t-es">LEER MÁS</span><span class="t-en">READ MORE</span> ↓</span><span class="more"><span class="t-es">LEER MENOS</span><span class="t-en">READ LESS</span> ↑</span></summary>
+        <div style="margin-top:14px;display:grid;gap:10px;font:400 13.5px/1.85 'IBM Plex Sans',sans-serif;color:#5A626C">
+          <p style="margin:0"><span class="t-es">Su trayectoria profesional abarca gestión de proyectos, marketing estratégico y consultoría, siempre en entornos que exigen adaptación rápida y resolución práctica de problemas.</span><span class="t-en">His career spans project management, strategic marketing and consulting, always in environments demanding fast adaptation and practical problem-solving.</span></p>
+          <p style="margin:0"><span class="t-es">Lo que define su perfil es la capacidad de generar ideas desde cero y llevarlas hasta su ejecución. No es un gestor que recibe un plan y lo ejecuta: es alguien que identifica oportunidades, las conceptualiza y las guía hasta que se convierten en operaciones reales. Ha aplicado esa mentalidad en sectores muy distintos entre sí, lo que le ha dado una capacidad de adaptación poco habitual: entiende rápido contextos nuevos, detecta problemas antes de que escalen y encuentra soluciones sin necesidad de recorrer todo el manual.</span><span class="t-en">What defines his profile is the ability to generate ideas from scratch and carry them through to execution. He is not a manager who receives a plan and delivers it: he identifies opportunities, shapes them and guides them until they become real operations. He has applied that mindset across very different sectors, which has given him an unusual capacity to adapt, he understands new contexts quickly, spots problems before they escalate and finds solutions without working through the whole manual.</span></p>
+          <p style="margin:0"><span class="t-es">Bilingüe en inglés y castellano, opera con la misma eficacia en los mercados internacionales del grupo que en las operaciones locales en España. En PRG aporta la visión transversal que un grupo multisectorial necesita para que las piezas encajen.</span><span class="t-en">Bilingual in English and Spanish, he operates just as effectively in the group's international markets as in local operations in Spain. At PRG he brings the cross-cutting perspective a multi-sector group needs for the pieces to fit together.</span></p>
+        </div>
+      </details>
+    </div>
+    <div class="seccard" style="padding:clamp(28px,3.5vw,40px)">
+      <div style="display:flex;gap:24px;align-items:center;margin-bottom:22px;flex-wrap:wrap">
+        <div style="width:120px;height:140px;border-radius:14px;overflow:hidden;flex:none;background:#EFEDE6"><img src="assets/img/alejandra-barriga.jpg" alt="Alejandra Barriga" style="width:100%;height:100%;object-fit:cover;object-position:center 18%;display:block"></div>
+        <div>
+          <h3 style="font:400 30px 'Cormorant Garamond',serif;margin:0 0 4px">Alejandra Barriga</h3>
+          <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8B6914"><span class="t-es">MARKETING MANAGER</span><span class="t-en">MARKETING MANAGER</span></div>
+        </div>
+      </div>
+      <div style="display:grid;gap:8px;margin-bottom:18px;font:400 13px/1.6 'IBM Plex Sans',sans-serif;color:#48505A">
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Más de 5 años de experiencia en marketing, desarrollo de negocio y comunicación</span><span class="t-en">Over 5 years of experience in marketing, business development and communications</span></span></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Gestión de proyectos y carteras de clientes en entornos de alta exigencia</span><span class="t-en">Project and client portfolio management in highly demanding environments</span></span></div>
+        <div style="display:grid;grid-template-columns:auto 1fr;gap:10px"><span style="color:#C9A96E">-</span><span><span class="t-es">Experiencia directa con administraciones públicas y sector institucional</span><span class="t-en">Direct experience with public administrations and the institutional sector</span></span></div>
+      </div>
+      <p style="font:400 13.5px/1.85 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0 0 14px"><span class="t-es">Responsable de la estrategia de marketing, comunicación y posicionamiento del grupo. Coordina la presencia de marca de PRG y gestiona la comunicación con los distintos públicos del grupo.</span><span class="t-en">She leads the group's marketing, communications and positioning strategy, coordinating PRG's brand presence and managing communication with the group's different audiences.</span></p>
+      <details class="bio">
+        <summary><span class="less"><span class="t-es">LEER MÁS</span><span class="t-en">READ MORE</span> ↓</span><span class="more"><span class="t-es">LEER MENOS</span><span class="t-en">READ LESS</span> ↑</span></summary>
+        <div style="margin-top:14px;display:grid;gap:10px;font:400 13.5px/1.85 'IBM Plex Sans',sans-serif;color:#5A626C">
+          <p style="margin:0"><span class="t-es">Su recorrido profesional combina marketing digital, gestión de proyectos y desarrollo de negocio. Ha liderado estrategias de comunicación y gestionado carteras de clientes en agencias de marketing digital, y cuenta con experiencia directa en el trabajo con ayuntamientos e instituciones públicas en el ámbito de la sostenibilidad y la captación de financiación.</span><span class="t-en">Her career combines digital marketing, project management and business development. She has led communication strategies and managed client portfolios at digital marketing agencies, and has direct experience working with municipalities and public institutions on sustainability and funding acquisition.</span></p>
+          <p style="margin:0"><span class="t-es">Ese conocimiento del funcionamiento de la administración local y del sector institucional, combinado con su perfil de marketing y gestión de clientes, le permite operar con soltura tanto en el plano comercial como en el institucional.</span><span class="t-en">That understanding of how local government and the institutional sector work, combined with her marketing and client management background, lets her operate with ease in both commercial and institutional settings.</span></p>
+          <p style="margin:0"><span class="t-es">En PRG aplica esa combinación de marketing estratégico y visión institucional a la construcción de la identidad del grupo y al desarrollo de sus relaciones comerciales.</span><span class="t-en">At PRG she applies that combination of strategic marketing and institutional insight to building the group's identity and developing its commercial relationships.</span></p>
+        </div>
+      </details>
+    </div>
+  </div>
+
+</div>
+</div>
+
+
+<!-- FILOSOFÍA (azul) -->
+<div style="background:#152233;color:#F4F2EC">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,40px)">
+    <div style="margin-bottom:clamp(40px,5vw,56px)">
+      <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#C9A96E;margin-bottom:18px"><span class="t-es">LO QUE NOS MUEVE</span><span class="t-en">WHAT DRIVES US</span></div>
+      <h2 style="font:300 clamp(36px,4.4vw,52px)/1.1 'Cormorant Garamond',serif;margin:0 0 16px"><span class="t-es">Nuestra <span style="color:#DCC08A">filosofía</span></span><span class="t-en">Our <span style="color:#DCC08A">philosophy</span></span></h2>
+      <p style="font:400 14px/1.8 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.62);max-width:1080px;margin:0"><span class="t-es">Los principios que dan forma a cada decisión, cada inversión y cada negocio que construimos.</span><span class="t-en">The principles that shape every decision, every investment, every business we build.</span></p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:clamp(28px,4vw,44px) clamp(28px,4vw,48px)">
+      <div style="border-top:1px solid rgba(201,169,110,.25);padding-top:18px"><div style="font:300 26px 'Cormorant Garamond',serif;color:#C9A96E;margin-bottom:8px">01</div><b style="font:600 15px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Visión estratégica</span><span class="t-en">Strategic vision</span></b><p style="font:400 13px/1.75 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.6);margin:0"><span class="t-es">Pensamiento a largo plazo con ejecución táctica: oportunidades donde la experiencia operativa genera ventajas que el capital puro no puede replicar.</span><span class="t-en">Long-term thinking combined with tactical execution, opportunities where operational expertise generates advantages pure capital cannot replicate.</span></p></div>
+      <div style="border-top:1px solid rgba(201,169,110,.25);padding-top:18px"><div style="font:300 26px 'Cormorant Garamond',serif;color:#C9A96E;margin-bottom:8px">02</div><b style="font:600 15px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Operadores implicados</span><span class="t-en">Hands-on operators</span></b><p style="font:400 13px/1.75 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.6);margin:0"><span class="t-es">No solo invertimos: dirigimos negocios. De las salas de Madrid a las operaciones agrícolas de Rumanía, nuestro liderazgo está presente en cada proyecto.</span><span class="t-en">We don't just invest, we run businesses. From restaurant floors in Madrid to agricultural operations in Romania, our leadership is present in every venture.</span></p></div>
+      <div style="border-top:1px solid rgba(201,169,110,.25);padding-top:18px"><div style="font:300 26px 'Cormorant Garamond',serif;color:#C9A96E;margin-bottom:8px">03</div><b style="font:600 15px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Inteligencia intersectorial</span><span class="t-en">Cross-sector intelligence</span></b><p style="font:400 13px/1.75 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.6);margin:0"><span class="t-es">Operar en hostelería, inmobiliario, salud, agricultura y automoción nos da una amplitud de visión que hace más fuerte cada negocio individual.</span><span class="t-en">Operating across hospitality, real estate, healthcare, agriculture and automotive gives us a breadth of insight that makes each business stronger.</span></p></div>
+      <div style="border-top:1px solid rgba(201,169,110,.25);padding-top:18px"><div style="font:300 26px 'Cormorant Garamond',serif;color:#C9A96E;margin-bottom:8px">04</div><b style="font:600 15px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Diversificación geográfica</span><span class="t-en">Geographic diversification</span></b><p style="font:400 13px/1.75 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.6);margin:0"><span class="t-es">Con operaciones en España, Grecia, Rumanía y el Golfo, estamos construidos para absorber la volatilidad regional y capturar la oportunidad allí donde surja.</span><span class="t-en">With active operations across Spain, Greece, Romania and the Gulf, we are built to absorb regional volatility and capture opportunity wherever it emerges.</span></p></div>
+      <div style="border-top:1px solid rgba(201,169,110,.25);padding-top:18px"><div style="font:300 26px 'Cormorant Garamond',serif;color:#C9A96E;margin-bottom:8px">05</div><b style="font:600 15px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Custodia a largo plazo</span><span class="t-en">Long-term stewardship</span></b><p style="font:400 13px/1.75 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.6);margin:0"><span class="t-es">Construimos para décadas. Cada compañía del portfolio se trata como un activo de legado: con paciencia, disciplina y compromiso con el valor duradero.</span><span class="t-en">We build for decades. Every company in our portfolio is treated as a legacy asset, managed with patience, discipline and commitment to enduring value.</span></p></div>
+      <div style="border-top:1px solid rgba(201,169,110,.25);padding-top:18px"><div style="font:300 26px 'Cormorant Garamond',serif;color:#C9A96E;margin-bottom:8px">06</div><b style="font:600 15px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Confianza y transparencia</span><span class="t-en">Trust &amp; transparency</span></b><p style="font:400 13px/1.75 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.6);margin:0"><span class="t-es">De socios a empleados y clientes: cada relación del ecosistema PRG se construye sobre comunicación clara, responsabilidad y compromiso con los resultados.</span><span class="t-en">From partners to employees to clients, every relationship in the PRG ecosystem is built on clear communication, accountability and a commitment to results.</span></p></div>
+    </div>
+  </div>
+</div>
+
+<!-- CTA -->
+<div style="background:#F7F5F0;color:#141A21;text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-140px;left:50%;transform:translateX(-50%);width:640px;height:640px;background:radial-gradient(ellipse,rgba(201,169,110,.14) 0%,transparent 65%);pointer-events:none"></div>
+  <div style="position:relative;max-width:900px;margin:0 auto;padding:clamp(72px,9vw,110px) clamp(20px,4vw,40px)">
+    <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#8B6914;margin-bottom:24px"><span class="t-es">TRABAJA CON NOSOTROS</span><span class="t-en">WORK WITH US</span></div>
+    <h2 style="font:300 clamp(36px,4.6vw,58px)/1.1 'Cormorant Garamond',serif;margin:0 0 22px"><span class="t-es">Habla con <span style="color:#8B6914">nuestro equipo</span></span><span class="t-en">Connect with <span style="color:#8B6914">our team</span></span></h2>
+    <p style="font:400 14px/1.9 'IBM Plex Sans',sans-serif;color:#5A626C;max-width:1080px;margin:0 auto 40px"><span class="t-es">¿Te interesa colaborar o explorar oportunidades de inversión? Será un placer hablar contigo.</span><span class="t-en">Interested in collaboration or partnership opportunities? We'd be pleased to hear from you.</span></p>
+    <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap">
+      <a href="contacto.html" class="btn" style="background:#C9A96E;border:1px solid #C9A96E;color:#10161D" style-hover="background:#DCC08A;border-color:#8B6914"><span class="t-es" style="color:#10161D">CONTACTAR</span><span class="t-en" style="color:#10161D">GET IN TOUCH</span></a>
+      <a href="portfolio.html" class="btn" style="border:1px solid rgba(20,26,33,.28);color:#141A21" style-hover="border-color:#8B6914;color:#8B6914"><span class="t-es">VER PORTFOLIO →</span><span class="t-en">VIEW OUR PORTFOLIO →</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div style="background:#0B1420;color:rgba(244,242,236,.6)">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(44px,5vw,60px) clamp(20px,4vw,40px)">
+    <div style="display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-start">
+      <div>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:12px">
+          <svg viewBox="188 240 545 560" style="height:20px;display:block" fill="#C9A96E"><polygon points="384.6,506.5 547.32,473.02 547.32,356.77 384.6,390.25"></polygon><polygon points="188.09,646.58 384.6,622.75 384.6,506.5 188.09,530.34"></polygon><polygon points="188.09,530.34 729.08,680.12 729.08,796.36 188.09,646.58"></polygon><polygon points="384.6,390.25 729.08,485.63 729.08,601.87 384.6,506.5"></polygon><polygon points="547.32,240.82 729.08,291.14 729.08,407.38 547.32,357.06"></polygon></svg>
+          <span style="font:600 12px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#F4F2EC">PROVEN RESULTS GROUP</span>
+        </div>
+        <div style="font:400 12px 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.42)">Madrid, <span class="t-es">España</span><span class="t-en">Spain</span> · <span class="t-es">Grupo de inversión y operación</span><span class="t-en">Investment &amp; operating group</span></div>
+      </div>
+      <div style="display:flex;gap:clamp(20px,3vw,44px);font:500 12.5px 'IBM Plex Sans',sans-serif;flex-wrap:wrap">
+        <a href="nosotros.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Quiénes somos</span><span class="t-en">About</span></a>
+        <a href="vision-y-objetivos.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Visión y objetivos</span><span class="t-en">Vision &amp; Goals</span></a>
+        <a href="portfolio.html" style="color:rgba(244,242,236,.72)">Portfolio</a>
+        <a href="inversiones.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Inversiones externas</span><span class="t-en">External investments</span></a>
+        <a href="equipo.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Equipo</span><span class="t-en">Team</span></a>
+        <a href="contacto.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Contacto</span><span class="t-en">Contact</span></a>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(244,242,236,.1);margin-top:30px;padding-top:20px;font:400 11.5px 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.36)">
+      <span>© 2026 Proven Results Group</span>
+      <span><span class="t-es">Todos los derechos reservados</span><span class="t-en">All rights reserved</span></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+function applyLang(l){var r=document.getElementById('site-root');if(r)r.classList.toggle('lang-en',l==='en');window.__lang=l;if(window.onLangChange)window.onLangChange(l);}
+function setLang(l){try{localStorage.setItem('prg-lang',l)}catch(e){}applyLang(l);}
+function toggleMenu(b){var n=b.parentElement.querySelector('.navlinks');if(n)n.classList.toggle('open');}
+document.addEventListener('click',function(e){var a=e.target.closest('.navlinks a');if(a){var n=a.closest('.navlinks');if(n)n.classList.remove('open');}});
+(function(){var l='es';try{l=localStorage.getItem('prg-lang')||'es'}catch(e){}applyLang(l);})();
+</script>
+</body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto, Proven Results Group</title>
+<link rel="icon" href="assets/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F7F5F0;color:#141A21;font-family:'IBM Plex Sans',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;transition:color .3s ease}a:hover{color:#C9A96E}
+::selection{background:#C9A96E;color:#10161D}
+h1,h2,h3,h4{text-wrap:balance}
+p{text-wrap:pretty}
+.t-en{display:none!important}
+.lang-en .t-es{display:none!important}
+.lang-en .t-en{display:inline!important}
+.lt-es{background:#C9A96E;color:#10161D}
+.lang-en .lt-es{background:transparent;color:#F4F2EC}
+.lang-en .lt-en{background:#C9A96E;color:#10161D}
+.btn{font:600 11.5px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;padding:16px 32px;border-radius:99px;display:inline-flex;align-items:center;gap:10px;transition:background .3s ease,color .3s ease,border-color .3s ease;border:none;cursor:pointer}
+.finput{width:100%;box-sizing:border-box;font:400 14px 'IBM Plex Sans',sans-serif;color:#141A21;background:#fff;border:1px solid rgba(20,26,33,.16);border-radius:12px;padding:14px 16px;outline:none;transition:border-color .3s ease,box-shadow .3s ease}
+.finput:focus{border-color:#C9A96E;box-shadow:0 0 0 3px rgba(201,169,110,.18)}
+.finput::placeholder{color:#9AA0A8}
+.cinfo{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid rgba(20,26,33,.1);border-radius:16px;padding:18px 20px;transition:border-color .3s ease,box-shadow .3s ease}
+.cinfo:hover{border-color:rgba(201,169,110,.55);box-shadow:0 6px 24px rgba(16,22,29,.07)}
+
+.nav-burger{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.nav-burger span{display:block;width:22px;height:2px;background:#F4F2EC;border-radius:2px}
+@media (max-width:900px){
+.nav-burger{display:flex}
+.navlinks{display:none!important;position:absolute;top:100%;left:0;right:0;background:#101C2B;flex-direction:column!important;align-items:flex-start!important;gap:2px!important;padding:10px 24px 22px;border-bottom:1px solid rgba(201,169,110,.25);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.navlinks.open{display:flex!important}
+.navlinks a{padding:11px 0;font-size:14.5px;width:100%}
+.navlinks a[href="contacto.html"],.navlinks a[href="#contacto"]{width:auto;margin-top:8px}
+}
+</style>
+
+</head>
+<body>
+
+
+<div id="site-root" class="">
+
+<!-- NAV -->
+<div style="position:sticky;top:0;z-index:50;background:rgba(16,28,43,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,169,110,.14)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:15px clamp(20px,4vw,40px)">
+    <a href="index.html" style="display:flex;align-items:center;gap:11px;flex:none">
+      <svg viewBox="188 240 545 560" style="height:24px;display:block" fill="#C9A96E"><polygon points="384.6,506.5 547.32,473.02 547.32,356.77 384.6,390.25"></polygon><polygon points="188.09,646.58 384.6,622.75 384.6,506.5 188.09,530.34"></polygon><polygon points="188.09,530.34 729.08,680.12 729.08,796.36 188.09,646.58"></polygon><polygon points="384.6,390.25 729.08,485.63 729.08,601.87 384.6,506.5"></polygon><polygon points="547.32,240.82 729.08,291.14 729.08,407.38 547.32,357.06"></polygon></svg>
+      <span style="font:600 12px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#F4F2EC">PROVEN RESULTS GROUP</span>
+    </a>
+    <button class="nav-burger" onclick="toggleMenu(this)" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <div class="navlinks" style="display:flex;align-items:center;gap:clamp(14px,2.2vw,30px);font:500 12.5px 'IBM Plex Sans',sans-serif;letter-spacing:.05em;color:rgba(244,242,236,.78);flex-wrap:wrap;justify-content:flex-end">
+      <a href="nosotros.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Quiénes somos</span><span class="t-en">About</span></a>
+      <a href="vision-y-objetivos.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Visión y objetivos</span><span class="t-en">Vision &amp; Goals</span></a>
+      <a href="portfolio.html" style="color:rgba(244,242,236,.78)">Portfolio</a>
+      <a href="inversiones.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Inversiones externas</span><span class="t-en">External investments</span></a>
+      <a href="equipo.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Equipo</span><span class="t-en">Team</span></a>
+      <span style="display:inline-flex;border:1px solid rgba(244,242,236,.25);border-radius:99px;overflow:hidden;font:600 10.5px 'IBM Plex Sans',sans-serif">
+        <span class="lt-es" onclick="setLang('es')" style="padding:6px 11px;cursor:pointer">ES</span>
+        <span class="lt-en" onclick="setLang('en')" style="padding:6px 11px;cursor:pointer;color:#F4F2EC">EN</span>
+      </span>
+      <a href="contacto.html" style="font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;padding:11px 24px;background:#C9A96E;color:#10161D;border-radius:99px"><span class="t-es" style="color:#10161D">CONTACTO</span><span class="t-en" style="color:#10161D">CONTACT</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- HERO compacto -->
+<div style="position:relative;background:#101C2B;color:#F4F2EC;min-height:calc(100vh - 55px);display:flex;align-items:center;overflow:hidden">
+  <div style="position:absolute;inset:0"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1600&q=80" alt="Fachada corporativa" style="width:100%;height:100%;object-fit:cover;object-position:center 40%;display:block"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(13,22,35,.94) 0%,rgba(13,22,35,.68) 55%,rgba(13,22,35,.4) 100%)"></div>
+  <div style="position:relative;max-width:1280px;margin:0 auto;width:100%;padding:clamp(72px,10vw,120px) clamp(20px,4vw,40px) clamp(56px,7vw,80px)">
+    <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#C9A96E;margin-bottom:20px"><span class="t-es">CONTACTO</span><span class="t-en">CONTACT</span></div>
+    <h1 style="font:300 clamp(44px,6vw,78px)/1 'Cormorant Garamond',serif;margin:0 0 18px;max-width:780px"><span class="t-es">Empecemos <span style="color:#DCC08A">a hablar</span></span><span class="t-en">Let's start <span style="color:#DCC08A">a conversation</span></span></h1>
+    <p style="font:400 14px/1.9 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.7);max-width:1080px;margin:0"><span class="t-es">Colaboración, oportunidades de inversión o simplemente conocer mejor nuestras operaciones: tu consulta es bienvenida.</span><span class="t-en">Whether you're interested in collaboration, investment opportunities or learning more about our operations, we welcome your inquiry.</span></p>
+  </div>
+</div>
+
+<!-- CONTACTO -->
+<div style="max-width:1280px;margin:0 auto;padding:clamp(56px,7vw,90px) clamp(20px,4vw,40px)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(400px,100%),1fr));gap:clamp(36px,5vw,72px);align-items:start">
+    <div>
+      <h2 style="font:300 clamp(30px,3.4vw,42px)/1.12 'Cormorant Garamond',serif;margin:0 0 14px"><span class="t-es">Información de contacto</span><span class="t-en">Contact information</span></h2>
+      <p style="font:400 14px/1.85 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0 0 26px"><span class="t-es">Respondemos personalmente a cada consulta seria, normalmente en uno o dos días laborables.</span><span class="t-en">We personally answer every serious inquiry, usually within one or two working days.</span></p>
+      <div style="display:grid;gap:12px;margin-bottom:26px">
+        <a href="mailto:info@provengroup.es" class="cinfo">
+          <span style="width:44px;height:44px;border-radius:50%;background:rgba(201,169,110,.14);border:1px solid rgba(201,169,110,.35);display:grid;place-items:center;flex:none"><svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:#8B6914;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></span>
+          <span><span style="display:block;font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;color:#8A8F96;margin-bottom:3px">EMAIL</span><b style="font:500 14.5px 'IBM Plex Sans',sans-serif;color:#141A21">info@provengroup.es</b></span>
+        </a>
+        <a href="tel:+46722471018" class="cinfo">
+          <span style="width:44px;height:44px;border-radius:50%;background:rgba(201,169,110,.14);border:1px solid rgba(201,169,110,.35);display:grid;place-items:center;flex:none"><svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:#8B6914;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L7.6 9.91a16 16 0 0 0 6.49 6.49l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"></path></svg></span>
+          <span><span style="display:block;font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;color:#8A8F96;margin-bottom:3px"><span class="t-es">TELÉFONO</span><span class="t-en">PHONE</span></span><b style="font:500 14.5px 'IBM Plex Sans',sans-serif;color:#141A21">+46 722 47 10 18</b></span>
+        </a>
+        <div class="cinfo" style="cursor:default">
+          <span style="width:44px;height:44px;border-radius:50%;background:rgba(201,169,110,.14);border:1px solid rgba(201,169,110,.35);display:grid;place-items:center;flex:none"><svg viewBox="0 0 24 24" style="width:18px;height:18px;stroke:#8B6914;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"></path><circle cx="12" cy="9" r="2.5"></circle></svg></span>
+          <span><span style="display:block;font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;color:#8A8F96;margin-bottom:3px"><span class="t-es">DIRECCIÓN</span><span class="t-en">ADDRESS</span></span><b style="font:500 14.5px 'IBM Plex Sans',sans-serif;color:#141A21">Madrid, <span class="t-es">España</span><span class="t-en">Spain</span></b></span>
+        </div>
+      </div>
+      <div style="background:#152233;border-radius:20px;padding:clamp(24px,3vw,32px);color:#F4F2EC">
+        <b style="font:400 20px 'Cormorant Garamond',serif;display:block;margin-bottom:8px"><span class="t-es">¿Qué puedes esperar?</span><span class="t-en">What to expect</span></b>
+        <p style="font:400 13px/1.8 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.65);margin:0"><span class="t-es">Cuéntanos quién eres y qué construyes. Si hay encaje, organizamos una llamada con el equipo directivo, sin intermediarios.</span><span class="t-en">Tell us who you are and what you're building. If there's a fit, we'll set up a call with the executive team, no intermediaries.</span></p>
+      </div>
+    </div>
+    <div style="background:#fff;border:1px solid rgba(20,26,33,.1);border-radius:20px;padding:clamp(28px,3.5vw,40px)">
+      <h2 style="font:300 clamp(30px,3.4vw,42px)/1.12 'Cormorant Garamond',serif;margin:0 0 22px"><span class="t-es">Escríbenos</span><span class="t-en">Send a message</span></h2>
+      <div style="display:grid;gap:16px">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+          <div><label for="f-nombre" style="display:block;font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.1em;color:#5A626C;margin-bottom:7px"><span class="t-es">NOMBRE *</span><span class="t-en">NAME *</span></label><input id="f-nombre" class="finput" type="text" placeholder="-"></div>
+          <div><label for="f-email" style="display:block;font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.1em;color:#5A626C;margin-bottom:7px">EMAIL *</label><input id="f-email" class="finput" type="email" placeholder="nombre@empresa.com"></div>
+        </div>
+        <div><label for="f-perfil" style="display:block;font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.1em;color:#5A626C;margin-bottom:7px"><span class="t-es">SOY…</span><span class="t-en">I AM…</span></label>
+          <select id="f-perfil" class="finput">
+            <option>Inversor</option>
+            <option>Banco / entidad financiera</option>
+            <option>Startup / fundador</option>
+            <option>Otro</option>
+          </select>
+        </div>
+        <div><label for="f-msg" style="display:block;font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.1em;color:#5A626C;margin-bottom:7px"><span class="t-es">MENSAJE *</span><span class="t-en">MESSAGE *</span></label><textarea id="f-msg" class="finput" rows="6" placeholder="Cuéntanos quién eres y qué estás construyendo…"></textarea></div>
+        <button class="btn" onclick="enviarForm()" style="background:#C9A96E;color:#10161D;justify-content:center"><span class="t-es" style="color:#10161D">ENVIAR MENSAJE →</span><span class="t-en" style="color:#10161D">SEND MESSAGE →</span></button>
+        <p style="font:400 11.5px/1.6 'IBM Plex Sans',sans-serif;color:#9AA0A8;margin:0;text-align:center"><span class="t-es">Al enviar se abrirá tu cliente de correo con el mensaje preparado para info@provengroup.es</span><span class="t-en">Sending opens your email client with the message addressed to info@provengroup.es</span></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<div style="background:#0B1420;color:rgba(244,242,236,.6)">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(44px,5vw,60px) clamp(20px,4vw,40px)">
+    <div style="display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-start">
+      <div>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:12px">
+          <svg viewBox="188 240 545 560" style="height:20px;display:block" fill="#C9A96E"><polygon points="384.6,506.5 547.32,473.02 547.32,356.77 384.6,390.25"></polygon><polygon points="188.09,646.58 384.6,622.75 384.6,506.5 188.09,530.34"></polygon><polygon points="188.09,530.34 729.08,680.12 729.08,796.36 188.09,646.58"></polygon><polygon points="384.6,390.25 729.08,485.63 729.08,601.87 384.6,506.5"></polygon><polygon points="547.32,240.82 729.08,291.14 729.08,407.38 547.32,357.06"></polygon></svg>
+          <span style="font:600 12px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#F4F2EC">PROVEN RESULTS GROUP</span>
+        </div>
+        <div style="font:400 12px 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.42)">Madrid, <span class="t-es">España</span><span class="t-en">Spain</span> · <span class="t-es">Grupo de inversión y operación</span><span class="t-en">Investment &amp; operating group</span></div>
+      </div>
+      <div style="display:flex;gap:clamp(20px,3vw,44px);font:500 12.5px 'IBM Plex Sans',sans-serif;flex-wrap:wrap">
+        <a href="nosotros.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Quiénes somos</span><span class="t-en">About</span></a>
+        <a href="vision-y-objetivos.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Visión y objetivos</span><span class="t-en">Vision &amp; Goals</span></a>
+        <a href="portfolio.html" style="color:rgba(244,242,236,.72)">Portfolio</a>
+        <a href="inversiones.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Inversiones externas</span><span class="t-en">External investments</span></a>
+        <a href="equipo.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Equipo</span><span class="t-en">Team</span></a>
+        <a href="contacto.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Contacto</span><span class="t-en">Contact</span></a>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(244,242,236,.1);margin-top:30px;padding-top:20px;font:400 11.5px 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.36)">
+      <span>© 2026 Proven Results Group</span>
+      <span><span class="t-es">Todos los derechos reservados</span><span class="t-en">All rights reserved</span></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+function applyLang(l){var r=document.getElementById('site-root');if(r)r.classList.toggle('lang-en',l==='en');window.__lang=l;if(window.onLangChange)window.onLangChange(l);}
+function setLang(l){try{localStorage.setItem('prg-lang',l)}catch(e){}applyLang(l);}
+function toggleMenu(b){var n=b.parentElement.querySelector('.navlinks');if(n)n.classList.toggle('open');}
+document.addEventListener('click',function(e){var a=e.target.closest('.navlinks a');if(a){var n=a.closest('.navlinks');if(n)n.classList.remove('open');}});
+(function(){var l='es';try{l=localStorage.getItem('prg-lang')||'es'}catch(e){}applyLang(l);})();
+
+var OPTS={es:['Inversor','Banco / entidad financiera','Startup / fundador','Otro'],en:['Investor','Bank / financial institution','Startup / founder','Other']};
+var PH={es:'Cuéntanos quién eres y qué estás construyendo…',en:'Tell us who you are and what you are building…'};
+window.onLangChange=function(l){
+  var sel=document.getElementById('f-perfil');
+  if(sel){var idx=sel.selectedIndex;OPTS[l==='en'?'en':'es'].forEach(function(t,i){if(sel.options[i])sel.options[i].text=t;});sel.selectedIndex=idx;}
+  var msg=document.getElementById('f-msg'); if(msg)msg.placeholder=PH[l==='en'?'en':'es'];
+};
+window.onLangChange(window.__lang||'es');
+function enviarForm(){
+  function v(id){var e=document.getElementById(id);return e?e.value:'';}
+  var es=(window.__lang||'es')!=='en';
+  var subject=encodeURIComponent((es?'Consulta web, ':'Website inquiry, ')+v('f-nombre'));
+  var body=encodeURIComponent((es?'Nombre: ':'Name: ')+v('f-nombre')+'\n'+'Email: '+v('f-email')+'\n'+(es?'Perfil: ':'Profile: ')+v('f-perfil')+'\n\n'+v('f-msg'));
+  window.location.href='mailto:info@provengroup.es?subject='+subject+'&body='+body;
+}</script>
+</body>
+</html>

@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Proven Results Group, Grupo de inversión y operación</title>
+<link rel="icon" href="assets/img/logo.svg">
+<link rel="preload" as="image" href="assets/img/madrid-towers.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#F7F5F0;color:#141A21;font-family:'IBM Plex Sans',sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none;transition:color .3s ease}a:hover{color:#C9A96E}
+::selection{background:#C9A96E;color:#10161D}
+h1,h2,h3,h4{text-wrap:balance}
+p{text-wrap:pretty}
+.t-en{display:none!important}
+.lang-en .t-es{display:none!important}
+.lang-en .t-en{display:inline!important}
+.lt-es{background:#C9A96E;color:#10161D}
+.lang-en .lt-es{background:transparent;color:#F4F2EC}
+.lang-en .lt-en{background:#C9A96E;color:#10161D}
+@keyframes kb{from{transform:scale(1.08)}to{transform:scale(1)}}
+.kb{animation:kb 13s cubic-bezier(.2,.6,.3,1) forwards}
+@keyframes rise{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.intro>*{opacity:0;animation:rise 1s cubic-bezier(.22,.61,.24,1) forwards}
+.intro>*:nth-child(1){animation-delay:.1s}.intro>*:nth-child(2){animation-delay:.25s}.intro>*:nth-child(3){animation-delay:.4s}
+.regcard{position:relative;border-radius:20px;overflow:hidden;min-height:360px;display:flex;align-items:flex-end}
+.regcard img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.6,.3,1)}
+.regcard:hover img{transform:scale(1.05)}
+.seccard{background:#fff;border:1px solid rgba(20,26,33,.1);border-radius:20px;padding:clamp(28px,3vw,38px);transition:border-color .35s ease,box-shadow .35s ease,transform .35s ease}
+.seccard:hover{border-color:rgba(201,169,110,.55);box-shadow:0 8px 32px rgba(16,22,29,.08);transform:translateY(-3px)}
+.btn{font:600 11.5px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;padding:16px 32px;border-radius:99px;display:inline-flex;align-items:center;gap:10px;transition:background .3s ease,color .3s ease,border-color .3s ease}
+#stat-madrid span{opacity:0;transform:translateY(10px);display:inline-block;transition:opacity .5s ease,transform .5s cubic-bezier(.22,.61,.24,1)}
+#stat-madrid.on span{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.kb{animation:none}.intro>*{opacity:1;animation:none}#stat-madrid span{opacity:1;transform:none;transition:none}}
+
+.nav-burger{display:none;background:none;border:none;cursor:pointer;padding:8px;flex-direction:column;gap:5px}
+.nav-burger span{display:block;width:22px;height:2px;background:#F4F2EC;border-radius:2px}
+@media (max-width:900px){
+.nav-burger{display:flex}
+.navlinks{display:none!important;position:absolute;top:100%;left:0;right:0;background:#101C2B;flex-direction:column!important;align-items:flex-start!important;gap:2px!important;padding:10px 24px 22px;border-bottom:1px solid rgba(201,169,110,.25);box-shadow:0 18px 40px rgba(0,0,0,.35)}
+.navlinks.open{display:flex!important}
+.navlinks a{padding:11px 0;font-size:14.5px;width:100%}
+.navlinks a[href="contacto.html"],.navlinks a[href="#contacto"]{width:auto;margin-top:8px}
+}
+.tmcard{text-align:center}
+.tmcard:hover img{transform:scale(1.04)}
+</style>
+
+</head>
+<body>
+
+
+<div id="site-root" class="">
+
+<!-- ══ NAV ══ -->
+<div style="position:sticky;top:0;z-index:50;background:rgba(16,28,43,.9);backdrop-filter:blur(14px);border-bottom:1px solid rgba(201,169,110,.14)">
+  <div style="max-width:1280px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:24px;padding:15px clamp(20px,4vw,40px)">
+    <a href="index.html" style="display:flex;align-items:center;gap:11px;flex:none">
+      <svg viewBox="188 240 545 560" style="height:24px;display:block" fill="#C9A96E"><polygon points="384.6,506.5 547.32,473.02 547.32,356.77 384.6,390.25"></polygon><polygon points="188.09,646.58 384.6,622.75 384.6,506.5 188.09,530.34"></polygon><polygon points="188.09,530.34 729.08,680.12 729.08,796.36 188.09,646.58"></polygon><polygon points="384.6,390.25 729.08,485.63 729.08,601.87 384.6,506.5"></polygon><polygon points="547.32,240.82 729.08,291.14 729.08,407.38 547.32,357.06"></polygon></svg>
+      <span style="font:600 12px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#F4F2EC">PROVEN RESULTS GROUP</span>
+    </a>
+    <button class="nav-burger" onclick="toggleMenu(this)" aria-label="Abrir menú"><span></span><span></span><span></span></button>
+    <div class="navlinks" style="display:flex;align-items:center;gap:clamp(14px,2.2vw,30px);font:500 12.5px 'IBM Plex Sans',sans-serif;letter-spacing:.05em;color:rgba(244,242,236,.78);flex-wrap:wrap;justify-content:flex-end">
+      <a href="nosotros.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Quiénes somos</span><span class="t-en">About</span></a>
+      <a href="vision-y-objetivos.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Visión y objetivos</span><span class="t-en">Vision &amp; Goals</span></a>
+      <a href="portfolio.html" style="color:rgba(244,242,236,.78)">Portfolio</a>
+      <a href="inversiones.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Inversiones externas</span><span class="t-en">External investments</span></a>
+      <a href="equipo.html" style="color:rgba(244,242,236,.78)"><span class="t-es">Equipo</span><span class="t-en">Team</span></a>
+      <span style="display:inline-flex;border:1px solid rgba(244,242,236,.25);border-radius:99px;overflow:hidden;font:600 10.5px 'IBM Plex Sans',sans-serif">
+        <span class="lt-es" onclick="setLang('es')" style="padding:6px 11px;cursor:pointer">ES</span>
+        <span class="lt-en" onclick="setLang('en')" style="padding:6px 11px;cursor:pointer;color:#F4F2EC">EN</span>
+      </span>
+      <a href="contacto.html" style="font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;padding:11px 24px;background:#C9A96E;color:#10161D;border-radius:99px"><span class="t-es" style="color:#10161D">CONTACTO</span><span class="t-en" style="color:#10161D">CONTACT</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ HERO ══ -->
+<div style="position:relative;min-height:calc(100vh - 55px);display:flex;align-items:center;background:#101C2B;overflow:hidden">
+  <div style="position:absolute;inset:0;overflow:hidden"><img src="assets/img/madrid-towers.jpg" alt="Cuatro Torres, Madrid" class="kb" style="width:100%;height:100%;object-fit:cover;object-position:center 30%;display:block"></div>
+  <div style="position:absolute;inset:0;background:linear-gradient(100deg,rgba(13,22,35,.92) 0%,rgba(13,22,35,.62) 55%,rgba(13,22,35,.28) 100%)"></div>
+  <div class="intro" style="position:relative;max-width:1280px;margin:0 auto;width:100%;padding:clamp(100px,13vw,160px) clamp(20px,4vw,40px) clamp(80px,10vw,120px)">
+    <h1 style="font:300 clamp(52px,7.5vw,96px)/1 'Cormorant Garamond',serif;letter-spacing:-.01em;color:#F4F2EC;margin:0 0 22px;max-width:820px">
+      <span class="t-es">Construimos negocios <span style="color:#DCC08A">que perduran</span></span>
+      <span class="t-en">Building businesses <span style="color:#DCC08A">that endure</span></span>
+    </h1>
+    <p style="font:400 15px/1.9 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.72);max-width:1080px;margin:0 0 42px">
+      <span class="t-es">Un grupo de inversión y operación diversificado que combina capital, ejecución y liderazgo operativo en hostelería, inmobiliario, salud, agricultura y proyectos estratégicos en Europa y mercados internacionales.</span>
+      <span class="t-en">A diversified investment and operating group combining capital, execution and operational leadership across hospitality, real estate, healthcare, agriculture and strategic ventures in Europe and international markets.</span>
+    </p>
+    <div style="display:flex;gap:16px;flex-wrap:wrap">
+      <a href="contacto.html" class="btn" style="background:#C9A96E;border:1px solid #C9A96E;color:#10161D" style-hover="background:#DCC08A;border-color:#DCC08A"><span class="t-es" style="color:#10161D">EMPECEMOS A HABLAR</span><span class="t-en" style="color:#10161D">START A CONVERSATION</span></a>
+      <a href="portfolio.html" class="btn" style="border:1px solid rgba(244,242,236,.32);color:#F4F2EC" style-hover="border-color:#C9A96E;color:#C9A96E"><span class="t-es">VER PORTFOLIO →</span><span class="t-en">EXPLORE PORTFOLIO →</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ QUIÉNES SOMOS (v3: texto + stats) ══ -->
+<div style="max-width:1280px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,40px)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:clamp(40px,6vw,90px);align-items:center">
+    <div>
+      <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#8B6914;margin-bottom:20px"><span class="t-es">QUIÉNES SOMOS</span><span class="t-en">ABOUT US</span></div>
+      <h2 style="font:300 clamp(36px,4.4vw,52px)/1.1 'Cormorant Garamond',serif;margin:0 0 20px"><span class="t-es">Capital, ejecución y liderazgo operativo</span><span class="t-en">Capital, execution and operational leadership</span></h2>
+      <p style="font:400 14.5px/1.9 'IBM Plex Sans',sans-serif;color:#48505A;margin:0 0 14px">
+        <span class="t-es">Proven Results Group es un grupo de inversión y operación diversificado con base en Madrid. Combinamos capital, ejecución y liderazgo operativo en seis sectores, en España y en mercados internacionales.</span>
+        <span class="t-en">Proven Results Group is a diversified investment and operating group based in Madrid. We combine capital, execution and operational leadership across six sectors, in Spain and international markets.</span>
+      </p>
+      <p style="font:400 14.5px/1.9 'IBM Plex Sans',sans-serif;color:#48505A;margin:0 0 32px">
+        <span class="t-es">Nuestro objetivo es simple: encontrar buenos negocios, entrar con disciplina y hacerlos mejores desde dentro, con la vista puesta en décadas y no en trimestres.</span>
+        <span class="t-en">Our goal is simple: find good businesses, enter with discipline and make them better from the inside, with our eyes on decades, not quarters.</span>
+      </p>
+      <a href="nosotros.html" class="btn" style="background:#C9A96E;border:1px solid #C9A96E;color:#132030" style-hover="background:#DCC08A;border-color:#DCC08A"><span class="t-es" style="color:#132030">CONOCER AL GRUPO →</span><span class="t-en" style="color:#132030">LEARN MORE ABOUT PRG →</span></a>
+    </div>
+    <div id="stats-qs" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,48px) clamp(24px,3vw,40px)">
+      <div><div style="font:300 clamp(44px,4.5vw,58px)/1 'Cormorant Garamond',serif;color:#141A21"><span data-count="6">6</span></div><div style="font:400 13.5px 'IBM Plex Sans',sans-serif;color:#6E7680;margin-top:10px"><span class="t-es">sectores de actividad</span><span class="t-en">sectors of activity</span></div></div>
+      <div><div style="font:300 clamp(44px,4.5vw,58px)/1 'Cormorant Garamond',serif;color:#141A21"><span data-count="4">4</span></div><div style="font:400 13.5px 'IBM Plex Sans',sans-serif;color:#6E7680;margin-top:10px"><span class="t-es">mercados en Europa y Oriente Medio</span><span class="t-en">markets across Europe and the Middle East</span></div></div>
+      <div><div style="font:300 clamp(44px,4.5vw,58px)/1 'Cormorant Garamond',serif;color:#141A21"><span data-count="100">100</span>%</div><div style="font:400 13.5px 'IBM Plex Sans',sans-serif;color:#6E7680;margin-top:10px"><span class="t-es">de los negocios, gestionados por nosotros</span><span class="t-en">of our businesses, managed by us</span></div></div>
+      <div><div style="font:300 clamp(44px,4.5vw,58px)/1 'Cormorant Garamond',serif;color:#C9A96E"><span id="stat-madrid">Madrid</span></div><div style="font:400 13.5px 'IBM Plex Sans',sans-serif;color:#6E7680;margin-top:10px"><span class="t-es">sede central del grupo</span><span class="t-en">group headquarters</span></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FILOSOFÍA Y VISIÓN (azul) ══ -->
+<div style="background:#152233;color:#F4F2EC">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,40px)">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:clamp(40px,6vw,80px);align-items:start">
+      <div>
+        <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#C9A96E;margin-bottom:22px"><span class="t-es">NUESTRA FILOSOFÍA</span><span class="t-en">OUR PHILOSOPHY</span></div>
+        <h2 style="font:300 clamp(36px,4.4vw,54px)/1.1 'Cormorant Garamond',serif;margin:0 0 22px"><span class="t-es">Respaldamos negocios, <span style="color:#DCC08A">después los construimos.</span></span><span class="t-en">We back businesses, <span style="color:#DCC08A">then we build them.</span></span></h2>
+        <p style="font:400 14.5px/1.9 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.75);margin:0 0 12px"><span class="t-es">La mayoría de los grupos firman un cheque y esperan. Nosotros hacemos lo contrario: tomamos posiciones donde nuestra implicación directa es la ventaja, y seguimos en la sala en cada etapa del crecimiento.</span><span class="t-en">Most groups write a cheque and wait. We do the opposite. We take positions where our hands-on involvement is the edge, and we stay in the room through every stage of growth.</span></p>
+        <p style="font:400 14.5px/1.9 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.75);margin:0"><span class="t-es">Capital disciplinado, experiencia operativa real y un horizonte genuinamente largo. Esa combinación es la que permite que las compañías que tocamos compongan valor durante años, no trimestres.</span><span class="t-en">Disciplined capital, real operating experience and a genuinely long horizon. That combination is what lets the companies we touch compound over years, not quarters.</span></p>
+        <a href="vision-y-objetivos.html" style="display:inline-block;margin-top:28px;font:600 11.5px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;color:#DCC08A"><span class="t-es" style="color:#DCC08A">VER VISIÓN Y OBJETIVOS →</span><span class="t-en" style="color:#DCC08A">SEE VISION &amp; GOALS →</span></a>
+      </div>
+      <div>
+        <div style="padding:0 0 24px;border-bottom:1px solid rgba(201,169,110,.18)"><h3 style="font:400 22px 'Cormorant Garamond',serif;color:#DCC08A;margin:0 0 10px"><span class="t-es">Cómo pensamos</span><span class="t-en">How we think</span></h3><p style="font:400 13.5px/1.8 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.62);margin:0"><span class="t-es">El valor duradero nace de tres cosas bien hechas: comprar los activos correctos, operarlos mejor que nadie y mantenerlos el tiempo suficiente para que ese trabajo importe.</span><span class="t-en">Durable value comes from three things done well: buying the right assets, running them better than anyone else could, and holding on long enough for that work to matter.</span></p></div>
+        <div style="padding:24px 0;border-bottom:1px solid rgba(201,169,110,.18)"><h3 style="font:400 22px 'Cormorant Garamond',serif;color:#DCC08A;margin:0 0 10px"><span class="t-es">Nuestro enfoque</span><span class="t-en">Our approach</span></h3><p style="font:400 13.5px/1.8 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.62);margin:0"><span class="t-es">Agilidad emprendedora con rigor institucional: cada inversión debe ser financieramente sólida, operativamente viable y alineada con un crecimiento responsable a largo plazo.</span><span class="t-en">Entrepreneurial agility with institutional rigour: every investment must be financially sound, operationally viable and aligned with responsible, long-term growth.</span></p></div>
+        <div style="padding:24px 0"><h3 style="font:400 22px 'Cormorant Garamond',serif;color:#DCC08A;margin:0 0 10px"><span class="t-es">Tres pilares centrales</span><span class="t-en">Three core pillars</span></h3><p style="font:400 13.5px/1.8 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.62);margin:0"><span class="t-es">Inmobiliario y su gestión profesional; hostelería y operaciones de servicios; e inversiones en tecnología, bienestar y sostenibilidad, experiencia profunda y palanca operativa en cada pilar.</span><span class="t-en">Real estate and its professional management; hospitality and service-based operations; and technology, wellness and sustainability-driven investments, deep expertise and operational leverage in each.</span></p></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ ESTRATEGIA + CON QUIÉN TRABAJAMOS (claro) ══ -->
+<div style="max-width:1280px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,40px)">
+  <div style="margin-bottom:clamp(36px,5vw,52px)">
+    <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#8B6914;margin-bottom:18px"><span class="t-es">ESTRATEGIA DE INVERSIÓN</span><span class="t-en">INVESTMENT STRATEGY</span></div>
+    <h2 style="font:300 clamp(36px,4.4vw,52px)/1.1 'Cormorant Garamond',serif;margin:0 0 16px"><span class="t-es">Del análisis a la creación de valor</span><span class="t-en">From analysis to value creation</span></h2>
+    <p style="font:400 14px/1.8 'IBM Plex Sans',sans-serif;color:#6E7680;max-width:1080px;margin:0"><span class="t-es">Cada día analizamos decenas de operaciones para encontrar el único activo con el mayor recorrido. Y después hacemos el trabajo.</span><span class="t-en">Every day we analyse dozens of potential deals to find the single asset with the greatest upside. Then we do the work.</span></p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));gap:clamp(28px,4vw,44px) clamp(36px,5vw,64px)">
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,2.5vw,30px);align-items:start"><span style="font:300 clamp(56px,5.5vw,74px)/1 'Cormorant Garamond',serif;color:#C9A96E">01</span><div style="padding-top:8px"><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Analizar</span><span class="t-en">Analyse</span></b><p style="font:400 13.5px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Filtramos decenas de oportunidades cada día y perseguimos solo aquellas donde tenemos una ventaja real.</span><span class="t-en">We screen dozens of opportunities and pursue only the ones where we hold a real edge.</span></p></div></div>
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,2.5vw,30px);align-items:start"><span style="font:300 clamp(56px,5.5vw,74px)/1 'Cormorant Garamond',serif;color:#C9A96E">02</span><div style="padding-top:8px"><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Adquirir</span><span class="t-en">Acquire</span></b><p style="font:400 13.5px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Entrada disciplinada, estructurada para proteger el capital y crear espacio de valor.</span><span class="t-en">Disciplined entry, structured to protect capital and create room for value creation.</span></p></div></div>
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,2.5vw,30px);align-items:start"><span style="font:300 clamp(56px,5.5vw,74px)/1 'Cormorant Garamond',serif;color:#C9A96E">03</span><div style="padding-top:8px"><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Operar</span><span class="t-en">Operate</span></b><p style="font:400 13.5px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Entramos a dirigir el negocio, mejorando el rendimiento desde dentro.</span><span class="t-en">We step in and run the business, improving performance from the inside out.</span></p></div></div>
+    <div style="display:grid;grid-template-columns:auto 1fr;gap:clamp(20px,2.5vw,30px);align-items:start"><span style="font:300 clamp(56px,5.5vw,74px)/1 'Cormorant Garamond',serif;color:#C9A96E">04</span><div style="padding-top:8px"><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:6px"><span class="t-es">Crear valor</span><span class="t-en">Realise value</span></b><p style="font:400 13.5px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Renovación, reposicionamiento y mejoras operativas que componen apreciación duradera.</span><span class="t-en">Renovation, repositioning and operational gains compound into lasting appreciation.</span></p></div></div>
+  </div>
+</div>
+
+<!-- ══ CON QUIÉN TRABAJAMOS (banda blanca) ══ -->
+<div style="background:#fff">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(64px,8vw,100px) clamp(20px,4vw,40px)">
+    <h3 style="font:300 clamp(28px,3.2vw,40px)/1.15 'Cormorant Garamond',serif;margin:0 0 14px"><span class="t-es">Una estrategia, tres formas de participar</span><span class="t-en">One strategy, three ways to take part</span></h3>
+    <p style="font:400 14px/1.8 'IBM Plex Sans',sans-serif;color:#6E7680;max-width:620px;margin:0 0 clamp(28px,4vw,40px)"><span class="t-es">Cada etapa de este proceso se abre a un tipo de socio distinto. Sea cual sea tu papel, la promesa es la misma: seriedad, transparencia y ejecución.</span><span class="t-en">Each stage of this process opens to a different kind of partner. Whatever your role, the promise is the same: seriousness, transparency and execution.</span></p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:clamp(28px,4vw,44px)">
+      <div style="border-top:1px solid rgba(139,105,20,.3);padding-top:18px"><div style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;color:#C9A96E;margin-bottom:8px"><span class="t-es">EN LA INVERSIÓN</span><span class="t-en">AT THE INVESTMENT STAGE</span></div><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:8px"><span class="t-es">Inversores</span><span class="t-en">Investors</span></b><p style="font:400 13px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0 0 12px"><span class="t-es">Co-invierte en las operaciones que superan nuestro filtro, junto a un equipo que pone su propio capital y las gestiona desde dentro, con reporting claro desde el primer día.</span><span class="t-en">Co-invest in the deals that pass our screen, alongside a team that commits its own capital and manages them from the inside, with clear reporting from day one.</span></p><a href="contacto.html" style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8B6914"><span class="t-es">HABLAR DE CO-INVERSIÓN →</span><span class="t-en">DISCUSS CO-INVESTMENT →</span></a></div>
+      <div style="border-top:1px solid rgba(139,105,20,.3);padding-top:18px"><div style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;color:#C9A96E;margin-bottom:8px"><span class="t-es">EN LA ADQUISICIÓN</span><span class="t-en">AT THE ACQUISITION STAGE</span></div><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:8px"><span class="t-es">Bancos y entidades</span><span class="t-en">Banks &amp; lenders</span></b><p style="font:400 13px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0 0 12px"><span class="t-es">Financia adquisiciones estructuradas para proteger el capital: gobernanza sólida, activos gestionados directamente y documentación y visibilidad financiera completas.</span><span class="t-en">Finance acquisitions structured to protect capital: solid governance, directly managed assets and complete documentation and financial visibility.</span></p><a href="contacto.html" style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8B6914"><span class="t-es">SOLICITAR INFORMACIÓN →</span><span class="t-en">REQUEST INFORMATION →</span></a></div>
+      <div style="border-top:1px solid rgba(139,105,20,.3);padding-top:18px"><div style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.16em;color:#C9A96E;margin-bottom:8px"><span class="t-es">EN LA OPERACIÓN</span><span class="t-en">AT THE OPERATING STAGE</span></div><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:8px"><span class="t-es">Startups y fundadores</span><span class="t-en">Startups &amp; founders</span></b><p style="font:400 13px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0 0 12px"><span class="t-es">Súmate a la fase en la que construimos: un socio operativo con experiencia real dirigiendo negocios. Si construyes algo serio y a largo plazo, queremos conocerte.</span><span class="t-en">Join us where we build: an operating partner with real experience running businesses. If you're building something serious and long-term, we want to meet you.</span></p><a href="contacto.html" style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8B6914"><span class="t-es">PRESENTA TU PROYECTO →</span><span class="t-en">PITCH YOUR PROJECT →</span></a></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ LO QUE OPERAMOS (v3, banda hueso) ══ -->
+<div style="background:#F1EEE7">
+<div style="max-width:1280px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,40px)">
+  <div style="margin-bottom:clamp(32px,4vw,48px)">
+    <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#8B6914;margin-bottom:18px"><span class="t-es">NEGOCIO PRINCIPAL</span><span class="t-en">CORE BUSINESS</span></div>
+    <h2 style="font:300 clamp(36px,4.4vw,52px)/1.1 'Cormorant Garamond',serif;margin:0 0 16px"><span class="t-es">Lo que operamos</span><span class="t-en">What we operate</span></h2>
+    <p style="font:400 14px/1.7 'IBM Plex Sans',sans-serif;color:#6E7680;max-width:1080px;margin:0"><span class="t-es">Seis sectores, una misma disciplina operativa. Cada uno es un negocio que dirigimos día a día, no una línea en una hoja de cálculo.</span><span class="t-en">Six sectors, one operating discipline. Each is a business we run day to day, not a line on a spreadsheet.</span></p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(370px,100%),1fr));gap:16px">
+    <div class="seccard"><div style="display:inline-block;font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.12em;color:#8B6914;background:rgba(201,169,110,.14);border:1px solid rgba(201,169,110,.3);border-radius:99px;padding:6px 13px;margin-bottom:18px"><span class="t-es">ESPAÑA · ACTIVO</span><span class="t-en">SPAIN · ACTIVE</span></div><h3 style="font:400 24px 'Cormorant Garamond',serif;margin:0 0 10px"><span class="t-es">Hostelería</span><span class="t-en">Hospitality</span></h3><p style="font:400 13px/1.8 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Restauración premium, coctelería y alojamiento seleccionado en mercados europeos clave, carácter local con servicio de primer nivel e ingresos consistentes.</span><span class="t-en">Premium dining, cocktail venues and curated accommodation across key European markets, local character, world-class service, consistent revenue.</span></p></div>
+    <div class="seccard"><div style="display:inline-block;font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.12em;color:#8B6914;background:rgba(201,169,110,.14);border:1px solid rgba(201,169,110,.3);border-radius:99px;padding:6px 13px;margin-bottom:18px"><span class="t-es">PILAR CENTRAL</span><span class="t-en">CORE PILLAR</span></div><h3 style="font:400 24px 'Cormorant Garamond',serif;margin:0 0 10px"><span class="t-es">Inmobiliario</span><span class="t-en">Real Estate</span></h3><p style="font:400 13px/1.8 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Adquisición, desarrollo y gestión residencial, comercial y de alquiler de corta estancia en España, Grecia, Rumanía, Dubái y Arabia Saudí. Identificamos activos infravalorados y los transformamos.</span><span class="t-en">Acquisition, development and management across residential, commercial and short-term rental markets in Spain, Greece, Romania, Dubai and Saudi Arabia, transforming undervalued assets.</span></p></div>
+    <div class="seccard"><div style="display:inline-block;font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.12em;color:#8B6914;background:rgba(201,169,110,.14);border:1px solid rgba(201,169,110,.3);border-radius:99px;padding:6px 13px;margin-bottom:18px"><span class="t-es">CRECIMIENTO</span><span class="t-en">GROWTH</span></div><h3 style="font:400 24px 'Cormorant Garamond',serif;margin:0 0 10px"><span class="t-es">Salud</span><span class="t-en">Healthcare</span></h3><p style="font:400 13px/1.8 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Clínicas médicas, centros de belleza y bienestar y telemedicina para poblaciones urbanas en crecimiento, servicios accesibles y de calidad con flujos estables.</span><span class="t-en">Medical clinics, beauty and wellness centres and telemedicine for growing urban populations, accessible, high-quality services with stable cash flows.</span></p></div>
+    <div class="seccard"><div style="display:inline-block;font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.12em;color:#8B6914;background:rgba(201,169,110,.14);border:1px solid rgba(201,169,110,.3);border-radius:99px;padding:6px 13px;margin-bottom:18px"><span class="t-es">LARGO PLAZO</span><span class="t-en">LONG TERM</span></div><h3 style="font:400 24px 'Cormorant Garamond',serif;margin:0 0 10px"><span class="t-es">Agricultura</span><span class="t-en">Agriculture</span></h3><p style="font:400 13px/1.8 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Agricultura sostenible, agri-tech y desarrollo agrícola en Rumanía y mercados europeos seleccionados, una clase de activo estratégica con demanda creciente.</span><span class="t-en">Sustainable farming, agri-tech and agricultural development in Romania and select European markets, a strategic asset class with growing demand.</span></p></div>
+    <div class="seccard"><div style="display:inline-block;font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.12em;color:#8B6914;background:rgba(201,169,110,.14);border:1px solid rgba(201,169,110,.3);border-radius:99px;padding:6px 13px;margin-bottom:18px"><span class="t-es">EN ESCALADO</span><span class="t-en">SCALING</span></div><h3 style="font:400 24px 'Cormorant Garamond',serif;margin:0 0 10px"><span class="t-es">Servicios de automoción</span><span class="t-en">Automotive Services</span></h3><p style="font:400 13px/1.8 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Centros integrales de reparación y servicio con retail integrado en Rumanía, negocios escalables y tecnificados para una demanda profesional creciente.</span><span class="t-en">Comprehensive repair and service centres with integrated retail in Romania, scalable, tech-enabled businesses for growing professional demand.</span></p></div>
+    <div class="seccard"><div style="display:inline-block;font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.12em;color:#8B6914;background:rgba(201,169,110,.14);border:1px solid rgba(201,169,110,.3);border-radius:99px;padding:6px 13px;margin-bottom:18px"><span class="t-es">EN CASA</span><span class="t-en">IN-HOUSE</span></div><h3 style="font:400 24px 'Cormorant Garamond',serif;margin:0 0 10px"><span class="t-es">Servicios de gestión</span><span class="t-en">Management Services</span></h3><p style="font:400 13px/1.8 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Soporte operativo centralizado, plataformas tecnológicas y servicios compartidos para que las compañías del grupo escalen con eficiencia.</span><span class="t-en">Centralised operational support, technology platforms and shared services so group companies scale efficiently.</span></p></div>
+  </div>
+</div>
+</div>
+
+<!-- ══ DÓNDE OPERAMOS (v4, azul) ══ -->
+<div style="background:#132030;color:#F4F2EC">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,40px)">
+    <div style="margin-bottom:clamp(40px,5vw,56px)">
+      <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#C9A96E;margin-bottom:18px"><span class="t-es">PRESENCIA REGIONAL</span><span class="t-en">REGIONAL FOOTPRINT</span></div>
+      <h2 style="font:300 clamp(36px,4.4vw,52px)/1.1 'Cormorant Garamond',serif;margin:0 0 16px"><span class="t-es">Dónde <span style="color:#DCC08A">operamos</span></span><span class="t-en">Where we <span style="color:#DCC08A">operate</span></span></h2>
+      <p style="font:400 14px/1.8 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.6);max-width:1080px;margin:0"><span class="t-es">Presencia estratégica en mercados clave de Europa y Oriente Medio.</span><span class="t-en">Strategic presence across key European and Middle Eastern markets.</span></p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(480px,100%),1fr));gap:16px">
+      <div class="regcard">
+        <img src="https://images.unsplash.com/photo-1543783207-ec64e4d95325?w=1200&q=80" alt="Madrid, España" style="filter:saturate(.55) brightness(.92)">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,22,35,.92) 0%,rgba(13,22,35,.2) 55%,transparent 100%)"></div>
+        <div style="position:relative;padding:26px 28px"><h3 style="font:400 28px 'Cormorant Garamond',serif;margin:0 0 6px"><span class="t-es">España</span><span class="t-en">Spain</span></h3><p style="font:400 12.5px/1.7 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.7);margin:0 0 12px"><span class="t-es">Base operativa central: hostelería, gestión e inmobiliario</span><span class="t-en">Core operating base across hospitality, management and real estate</span></p><a href="portfolio.html" style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.2em;color:#C9A96E"><span class="t-es">VER DETALLES →</span><span class="t-en">VIEW DETAILS →</span></a></div>
+      </div>
+      <div class="regcard">
+        <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=1200&q=80" alt="Grecia" style="filter:saturate(.55) brightness(.92)">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,22,35,.92) 0%,rgba(13,22,35,.2) 55%,transparent 100%)"></div>
+        <div style="position:relative;padding:26px 28px"><h3 style="font:400 28px 'Cormorant Garamond',serif;margin:0 0 6px"><span class="t-es">Grecia</span><span class="t-en">Greece</span></h3><p style="font:400 12.5px/1.7 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.7);margin:0 0 12px"><span class="t-es">Oportunidades inmobiliarias, de hostelería y salud en Rodas</span><span class="t-en">Real estate, hospitality and healthcare opportunities in Rhodes</span></p><a href="portfolio.html" style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.2em;color:#C9A96E"><span class="t-es">VER DETALLES →</span><span class="t-en">VIEW DETAILS →</span></a></div>
+      </div>
+      <div class="regcard">
+        <img src="assets/img/city-dusk.jpg" alt="Rumanía">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,22,35,.92) 0%,rgba(13,22,35,.2) 55%,transparent 100%)"></div>
+        <div style="position:relative;padding:26px 28px"><h3 style="font:400 28px 'Cormorant Garamond',serif;margin:0 0 6px"><span class="t-es">Rumanía</span><span class="t-en">Romania</span></h3><p style="font:400 12.5px/1.7 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.7);margin:0 0 12px"><span class="t-es">Mercado de crecimiento: agricultura, automoción y bienestar</span><span class="t-en">Operational growth market for agriculture, automotive and wellness</span></p><a href="portfolio.html" style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.2em;color:#C9A96E"><span class="t-es">VER DETALLES →</span><span class="t-en">VIEW DETAILS →</span></a></div>
+      </div>
+      <div class="regcard">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1200&q=80" alt="EAU y Arabia Saudí">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(13,22,35,.92) 0%,rgba(13,22,35,.2) 55%,transparent 100%)"></div>
+        <div style="position:relative;padding:26px 28px"><h3 style="font:400 28px 'Cormorant Garamond',serif;margin:0 0 6px">EAU · <span class="t-es">Arabia Saudí</span><span class="t-en">Saudi Arabia</span></h3><p style="font:400 12.5px/1.7 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.7);margin:0 0 12px"><span class="t-es">Actividad en desarrollo en hostelería e inmobiliario</span><span class="t-en">Developing hospitality and real estate activity</span></p><a href="portfolio.html" style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.2em;color:#C9A96E"><span class="t-es">VER DETALLES →</span><span class="t-en">VIEW DETAILS →</span></a></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══ NUESTROS COMPROMISOS (v3) ══ -->
+<div style="max-width:1280px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,40px)">
+  <div style="margin-bottom:clamp(36px,5vw,52px)">
+    <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#8B6914;margin-bottom:18px"><span class="t-es">NUESTROS COMPROMISOS</span><span class="t-en">OUR COMMITMENTS</span></div>
+    <h2 style="font:300 clamp(36px,4.4vw,52px)/1.1 'Cormorant Garamond',serif;margin:0 0 16px"><span class="t-es">Qué significa asociarse con nosotros</span><span class="t-en">What partnering with us means</span></h2>
+    <p style="font:400 14px/1.8 'IBM Plex Sans',sans-serif;color:#6E7680;max-width:1080px;margin:0"><span class="t-es">Invertimos nuestro propio capital en cada operación: tratamos cada negocio como trataríamos el nuestro.</span><span class="t-en">We invest our own capital alongside every deal, we treat each business the way we'd want ours treated.</span></p>
+  </div>
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(280px,100%),1fr));gap:clamp(32px,4vw,56px)">
+    <div><div style="font:300 clamp(40px,4vw,54px)/1 'Cormorant Garamond',serif;color:#C9A96E;margin-bottom:14px">01</div><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:8px"><span class="t-es">Intereses alineados</span><span class="t-en">Aligned interests</span></b><p style="font:400 13.5px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Ponemos nuestro capital en lo que respaldamos y seguimos implicados en la operación. Cuando el negocio gana, ganamos con él, nunca a su costa.</span><span class="t-en">We put our own capital to work in what we back and stay involved in the operation. When the business wins, we win with it, never at its expense.</span></p></div>
+    <div><div style="font:300 clamp(40px,4vw,54px)/1 'Cormorant Garamond',serif;color:#C9A96E;margin-bottom:14px">02</div><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:8px"><span class="t-es">Transparencia y gobernanza</span><span class="t-en">Transparency &amp; governance</span></b><p style="font:400 13.5px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Reporting claro, decisiones disciplinadas y conversaciones honestas. Los socios siempre saben dónde está el negocio y hacia dónde va.</span><span class="t-en">Clear reporting, disciplined decision-making and honest conversations. Partners always know where a business stands and where it is heading.</span></p></div>
+    <div><div style="font:300 clamp(40px,4vw,54px)/1 'Cormorant Garamond',serif;color:#C9A96E;margin-bottom:14px">03</div><b style="font:600 16px 'IBM Plex Sans',sans-serif;display:block;margin-bottom:8px"><span class="t-es">Capital responsable a largo plazo</span><span class="t-en">Responsible, long-term capital</span></b><p style="font:400 13.5px/1.75 'IBM Plex Sans',sans-serif;color:#5A626C;margin:0"><span class="t-es">Construimos para durar, no para la salida rápida, invirtiendo de forma sostenible en las personas, los activos y las comunidades detrás de cada compañía.</span><span class="t-en">We build for durability, not the quick exit, investing sustainably in the people, assets and communities behind every company we own.</span></p></div>
+  </div>
+</div>
+
+<!-- ══ LIDERAZGO (v4, banda hueso) ══ -->
+<div style="background:#F1EEE7;border-top:1px solid rgba(20,26,33,.08)">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(72px,9vw,120px) clamp(20px,4vw,40px)">
+    <div style="text-align:center;margin-bottom:clamp(40px,5vw,56px)">
+      <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#8B6914;margin-bottom:18px"><span class="t-es">LIDERAZGO</span><span class="t-en">LEADERSHIP</span></div>
+      <h2 style="font:300 clamp(36px,4.4vw,52px)/1.1 'Cormorant Garamond',serif;margin:0 0 14px"><span class="t-es">Las personas detrás</span><span class="t-en">The people behind it</span></h2>
+      <p style="font:400 14px/1.85 'IBM Plex Sans',sans-serif;color:#6E7680;max-width:1080px;margin:0 auto"><span class="t-es">Ejecutivos experimentados que combinan visión emprendedora con disciplina operativa.</span><span class="t-en">Experienced executives combining entrepreneurial vision with operational discipline.</span></p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(230px,100%),1fr));gap:20px">
+      <div class="tmcard">
+        <div style="aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#EFEDE6;margin-bottom:18px"><img src="assets/img/ghassan.jpg" alt="Ghassan El Khazen" style="width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;transition:transform .6s cubic-bezier(.2,.6,.3,1)"></div>
+        <h3 style="font:400 22px 'Cormorant Garamond',serif;color:#8B6914;margin:0 0 5px">Ghassan El Khazen</h3>
+        <div style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8A8F96">CHIEF EXECUTIVE OFFICER</div>
+      </div>
+      <div class="tmcard">
+        <div style="aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#EFEDE6;margin-bottom:18px"><img src="assets/img/alexandros.jpg" alt="Alexandros Kastrounis" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block"></div>
+        <h3 style="font:400 22px 'Cormorant Garamond',serif;color:#8B6914;margin:0 0 5px">Alexandros Kastrounis</h3>
+        <div style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8A8F96">CHIEF OPERATION MANAGER</div>
+      </div>
+      <div class="tmcard">
+        <div style="aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#EFEDE6;margin-bottom:18px"><img src="assets/img/alex-jimenez.jpg" alt="Alex Jiménez" style="width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;transition:transform .6s cubic-bezier(.2,.6,.3,1)"></div>
+        <h3 style="font:400 22px 'Cormorant Garamond',serif;color:#8B6914;margin:0 0 5px">Alex Jiménez</h3>
+        <div style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8A8F96">GENERAL MANAGER</div>
+      </div>
+      <div class="tmcard">
+        <div style="aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#EFEDE6;margin-bottom:18px"><img src="assets/img/alejandra-barriga.jpg" alt="Alejandra Barriga" style="width:100%;height:100%;object-fit:cover;object-position:center 15%;display:block;transition:transform .6s cubic-bezier(.2,.6,.3,1)"></div>
+        <h3 style="font:400 22px 'Cormorant Garamond',serif;color:#8B6914;margin:0 0 5px">Alejandra Barriga</h3>
+        <div style="font:600 10px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#8A8F96">MARKETING MANAGER</div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:clamp(32px,4vw,44px)"><a href="equipo.html" style="display:inline-block;font:600 11px 'IBM Plex Sans',sans-serif;letter-spacing:.14em;color:#141A21;border:1px solid rgba(20,26,33,.25);border-radius:99px;padding:13px 30px;transition:border-color .25s ease,color .25s ease"><span class="t-es">CONOCE MEJOR AL EQUIPO →</span><span class="t-en">MEET THE FULL TEAM →</span></a></div>
+  </div>
+</div>
+
+
+<!-- ══ CTA (azul) ══ -->
+<div style="background:#101C2B;color:#F4F2EC;text-align:center;position:relative;overflow:hidden">
+  <div style="position:absolute;top:-140px;left:50%;transform:translateX(-50%);width:640px;height:640px;background:radial-gradient(ellipse,rgba(201,169,110,.07) 0%,transparent 65%);pointer-events:none"></div>
+  <div style="position:relative;max-width:900px;margin:0 auto;padding:clamp(80px,10vw,130px) clamp(20px,4vw,40px)">
+    <div style="font:600 10.5px 'IBM Plex Sans',sans-serif;letter-spacing:.28em;color:#C9A96E;margin-bottom:24px"><span class="t-es">OPORTUNIDADES DE COLABORACIÓN</span><span class="t-en">PARTNERSHIP OPPORTUNITIES</span></div>
+    <h2 style="font:300 clamp(38px,5vw,64px)/1.1 'Cormorant Garamond',serif;margin:0 0 22px"><span class="t-es">Si construyes a largo plazo,<br><span style="color:#DCC08A">nosotros también.</span></span><span class="t-en">If you build for the long term,<br><span style="color:#DCC08A">so do we.</span></span></h2>
+    <p style="font:400 14px/1.9 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.64);max-width:1080px;margin:0 auto 44px"><span class="t-es">Colaboración, oportunidades de inversión o simplemente conocer mejor nuestras operaciones: será un placer hablar contigo.</span><span class="t-en">Whether you're interested in collaboration, investment opportunities or learning more about our operations, we'd be pleased to connect.</span></p>
+    <div style="display:flex;gap:18px;justify-content:center;flex-wrap:wrap">
+      <a href="contacto.html" class="btn" style="background:#C9A96E;border:1px solid #C9A96E;color:#10161D" style-hover="background:#DCC08A;border-color:#DCC08A"><span class="t-es" style="color:#10161D">CONTACTAR</span><span class="t-en" style="color:#10161D">CONTACT US</span></a>
+      <a href="inversiones.html" class="btn" style="border:1px solid rgba(244,242,236,.32);color:#F4F2EC" style-hover="border-color:#C9A96E;color:#C9A96E"><span class="t-es">VER INVERSIONES →</span><span class="t-en">VIEW INVESTMENTS →</span></a>
+    </div>
+  </div>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<div style="background:#0B1420;color:rgba(244,242,236,.6)">
+  <div style="max-width:1280px;margin:0 auto;padding:clamp(44px,5vw,60px) clamp(20px,4vw,40px)">
+    <div style="display:flex;justify-content:space-between;gap:40px;flex-wrap:wrap;align-items:flex-start">
+      <div>
+        <div style="display:flex;align-items:center;gap:11px;margin-bottom:12px">
+          <svg viewBox="188 240 545 560" style="height:20px;display:block" fill="#C9A96E"><polygon points="384.6,506.5 547.32,473.02 547.32,356.77 384.6,390.25"></polygon><polygon points="188.09,646.58 384.6,622.75 384.6,506.5 188.09,530.34"></polygon><polygon points="188.09,530.34 729.08,680.12 729.08,796.36 188.09,646.58"></polygon><polygon points="384.6,390.25 729.08,485.63 729.08,601.87 384.6,506.5"></polygon><polygon points="547.32,240.82 729.08,291.14 729.08,407.38 547.32,357.06"></polygon></svg>
+          <span style="font:600 12px 'IBM Plex Sans',sans-serif;letter-spacing:.18em;color:#F4F2EC">PROVEN RESULTS GROUP</span>
+        </div>
+        <div style="font:400 12px 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.42)">Madrid, <span class="t-es">España</span><span class="t-en">Spain</span> · <span class="t-es">Grupo de inversión y operación</span><span class="t-en">Investment &amp; operating group</span></div>
+      </div>
+      <div style="display:flex;gap:clamp(20px,3vw,44px);font:500 12.5px 'IBM Plex Sans',sans-serif;flex-wrap:wrap">
+        <a href="nosotros.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Quiénes somos</span><span class="t-en">About</span></a>
+        <a href="vision-y-objetivos.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Visión y objetivos</span><span class="t-en">Vision &amp; Goals</span></a>
+        <a href="portfolio.html" style="color:rgba(244,242,236,.72)">Portfolio</a>
+        <a href="inversiones.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Inversiones externas</span><span class="t-en">External investments</span></a>
+        <a href="equipo.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Equipo</span><span class="t-en">Team</span></a>
+        <a href="contacto.html" style="color:rgba(244,242,236,.72)"><span class="t-es">Contacto</span><span class="t-en">Contact</span></a>
+      </div>
+    </div>
+    <div style="display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(244,242,236,.1);margin-top:30px;padding-top:20px;font:400 11.5px 'IBM Plex Sans',sans-serif;color:rgba(244,242,236,.36)">
+      <span>© 2026 Proven Results Group</span>
+      <span><span class="t-es">Todos los derechos reservados</span><span class="t-en">All rights reserved</span></span>
+    </div>
+  </div>
+</div>
+
+</div>
+
+
+<script>
+function applyLang(l){var r=document.getElementById('site-root');if(r)r.classList.toggle('lang-en',l==='en');window.__lang=l;if(window.onLangChange)window.onLangChange(l);}
+function setLang(l){try{localStorage.setItem('prg-lang',l)}catch(e){}applyLang(l);}
+function toggleMenu(b){var n=b.parentElement.querySelector('.navlinks');if(n)n.classList.toggle('open');}
+document.addEventListener('click',function(e){var a=e.target.closest('.navlinks a');if(a){var n=a.closest('.navlinks');if(n)n.classList.remove('open');}});
+(function(){var l='es';try{l=localStorage.getItem('prg-lang')||'es'}catch(e){}applyLang(l);})();
+
+(function(){
+  var sec=document.getElementById('stats-qs'); if(!sec)return;
+  var madrid=document.getElementById('stat-madrid');
+  if(madrid&&!madrid._split){madrid._split=true;var txt=madrid.textContent;madrid.textContent='';txt.split('').forEach(function(ch,i){var s=document.createElement('span');s.textContent=ch;s.style.transitionDelay=(i*70)+'ms';madrid.appendChild(s);});}
+  var played=false;
+  var obs=new IntersectionObserver(function(es){
+    if(!es[0].isIntersecting||played)return; played=true;
+    sec.querySelectorAll('[data-count]').forEach(function(el){
+      var target=parseInt(el.getAttribute('data-count'),10),t0=performance.now(),dur=2600;
+      function tick(t){var pr=Math.min(1,(t-t0)/dur),ease=1-Math.pow(1-pr,3);el.textContent=Math.round(target*ease);if(pr<1)requestAnimationFrame(tick);}
+      requestAnimationFrame(tick);
+    });
+    if(madrid)madrid.classList.add('on');
+    obs.disconnect();
+  },{threshold:0.85});
+  obs.observe(sec);
+})();</script>
+</body>
+</html>
