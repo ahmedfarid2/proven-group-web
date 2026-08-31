@@ -14,10 +14,9 @@
 body{margin:0;min-height:100vh;display:flex;flex-direction:column;
   background:#F7F5F0;color:#141A21;
   font-family:'IBM Plex Sans',sans-serif;-webkit-font-smoothing:antialiased}
-header{padding:22px 28px;background:#10161D}
-.brand{display:inline-flex;align-items:center;gap:12px;text-decoration:none}
-.brand img{height:26px;width:auto}
-.brand span{color:#fff;font-size:13px;letter-spacing:.18em;font-weight:600}
+header{padding:15px clamp(20px,4vw,40px);background:rgba(16,28,43,.96);border-bottom:1px solid rgba(201,169,110,.14)}
+.brand{display:inline-flex;align-items:center;gap:11px;text-decoration:none}
+.brand span{color:#F4F2EC;font-size:12px;letter-spacing:.18em;font-weight:600}
 main{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;
   text-align:center;padding:72px 24px}
 .code{font-family:'Cormorant Garamond',serif;font-size:96px;line-height:1;color:#C9A96E;margin:0}
@@ -39,7 +38,7 @@ footer{padding:22px;text-align:center;color:#6E7680;font-size:12px}
 <body>
 <header>
   <a class="brand" href="/">
-    <img src="/assets/img/logo.svg" alt="Proven Results Group">
+    <svg viewBox="188 240 545 560" style="height:24px;display:block" fill="#C9A96E" role="img" aria-label="Proven Results Group"><polygon points="384.6,506.5 547.32,473.02 547.32,356.77 384.6,390.25"></polygon><polygon points="188.09,646.58 384.6,622.75 384.6,506.5 188.09,530.34"></polygon><polygon points="188.09,530.34 729.08,680.12 729.08,796.36 188.09,646.58"></polygon><polygon points="384.6,390.25 729.08,485.63 729.08,601.87 384.6,506.5"></polygon><polygon points="547.32,240.82 729.08,291.14 729.08,407.38 547.32,357.06"></polygon></svg>
     <span>PROVEN RESULTS GROUP</span>
   </a>
 </header>
