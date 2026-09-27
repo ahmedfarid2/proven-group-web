@@ -6,3 +6,11 @@ image-slot.js
 assets/imgc/
 
 .DS_Store
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Local Claude Code settings (machine-specific)
+.claude/settings.local.json
